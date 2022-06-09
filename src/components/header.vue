@@ -7,5 +7,4 @@
          <span class="font-thin text-white" >Elenco Star Wars</span>
         </div>
     </div>
- 
 </template>
