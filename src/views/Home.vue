@@ -68,7 +68,7 @@
             </div>
             <div v-if="War.name === 'Biggs Darklighter'">
               <img
-                src="../assets/Biggs Darklighter.png"
+                src="../assets/BiggsDarklighter.png"
                 alt=""
                 style="max-width: 170px"
               />
@@ -108,37 +108,37 @@ export default defineComponent({
       await 
         axios
         .get("https://swapi.dev/api/people/?format=json")
-        .then((resp) => {star.value.Wars = resp.data.results; console.log(resp.data.results)})
+        .then((resp) => {star.value.Wars = resp.data.results})
         .catch((err) => {console.log(err.message)})
         
         //STARTSHIPS LUKE 12
         axios
         .get("https://swapi.dev/api/starships/12/?format=json")
-        .then((resp) => {star.value.ships12 = resp.data.name, console.log(resp.data.name)})
+        .then((resp) => {star.value.ships12 = resp.data.name})
         .catch((err) => {console.log(err.message)})
         
         //STARTSHIPS LUKE 22
         axios
         .get("https://swapi.dev/api/starships/22/?format=json")
-        .then((resp) => {star.value.ships22 = resp.data.name; console.log(resp.data.name)})
+        .then((resp) => {star.value.ships22 = resp.data.name})
         .catch((err) => {console.log(err.message)})
         
         //DARTH VADER 13
         axios
         .get("https://swapi.dev/api/starships/13/?format=json")
-        .then((resp) => {star.value.ships13 = resp.data.name, console.log(resp.data.name)})
+        .then((resp) => {star.value.ships13 = resp.data.name})
         .catch((err) => {console.log(err.message)})
         
         //OBI-WAN-KENOBI 64
         axios
         .get("https://swapi.dev/api/starships/59/?format=json")
-        .then((resp) => {star.value.ships59 = resp.data.name, console.log(resp.data.name)})
+        .then((resp) => {star.value.ships59 = resp.data.name})
         .catch((err) => {console.log(err.message)})
         
         //OBI-WAN-KENOBI 65
         axios
         .get("https://swapi.dev/api/starships/65/?format=json")
-        .then((resp) => {star.value.ships65 = resp.data.name, console.log(resp.data.name)})
+        .then((resp) => {star.value.ships65 = resp.data.name})
         .catch((err) => {console.log(err.message)})
     };
 
